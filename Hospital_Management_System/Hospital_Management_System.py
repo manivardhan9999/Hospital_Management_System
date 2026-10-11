@@ -55,11 +55,11 @@ class HospitalManagementSystem:
         for p in self.patients:
             if p.id == search_id:
                 print("\nMatch Found:")
-                print(f"🆔 ID: {p.id}")
-                print(f"👤 Name: {p.name}")
-                print(f"📅 Age: {p.age}")
-                print(f"🚻 Gender: {p.gender}")
-                print(f"🤒 Disease: {p.disease}")
+                print(f"ID: {p.id}")
+                print(f"Name: {p.name}")
+                print(f"Age: {p.age}")
+                print(f"Gender: {p.gender}")
+                print(f"Disease: {p.disease}")
                 return
         print("Patient record not found.")
 
@@ -70,7 +70,7 @@ class HospitalManagementSystem:
         for i, p in enumerate(self.patients):
             if p.id == delete_id:
                 removed_patient = self.patients.pop(i)
-                print(f"🗑️ Patient '{removed_patient.name}' has been removed successfully.")
+                print(f"Patient '{removed_patient.name}' has been removed successfully.")
                 return
         print("Patient ID not found.")
 
